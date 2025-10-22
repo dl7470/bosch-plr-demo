@@ -112,11 +112,6 @@
           const glmServiceUuid = "02a6c0d0-0451-4000-b000-fb3210111989";
           const characteristicUuid = "02a6c0f0-0451-4000-b000-fb3210111989";
 
-          // filters used to filter out devices that are not Bosch PLR devices
-          const filters = [
-            { namePrefix: "Bosch PLR" },
-            { services: [glmServiceUuid] },
-          ];
 
           navigator.bluetooth
             .requestDevice({
